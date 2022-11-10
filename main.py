@@ -1,5 +1,4 @@
 #Hier werde ich nur die Basics von librosa testen ^^
-
 import os
 import numpy as np
 import librosa
