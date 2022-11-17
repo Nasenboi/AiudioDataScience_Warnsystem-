@@ -1,22 +1,19 @@
 #Hier werde ich nur die Basics von librosa testen ^^
-import os
-
-from AudioDataPackage.AudioPreprocessing.CutAudioData import CutAudioData as cut
-
-
-snippets = cut.getSnippets(os.getcwd() + "\\AudioTestData\\bruh.wav")
+#import os
+import librosa
+import librosa.util
+#from AudioDataPackage.AudioPreprocessing.CutAudioData import CutAudioData as cut
 
 
-'''
+
 # 1. Get the file path to an included audio example
-filename = 'AudioData/bruh.wav'
+filename = 'AudioTestData/bruh.wav'
 
 waveform, samplerate = librosa.load(filename)
-waveform, _ = librosa.effects.trim(waveform)
 
-n = 1024
+frame_length = samplerate
+hop_length = frame_length
 
-fourier = np.abs(librosa.stft(waveform, n))
-fourier_in_dB = librosa.amplitude_to_db(fourier, ref=np.max)
-librosa.display.specshow(fourier_in_dB, sr=samplerate, x_axis='time', y_axis='log')
-plt.show()'''
+snippets = librosa.util.frame(waveform, frame_length, hop_length)
+
+print(snippets)
