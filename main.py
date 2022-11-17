@@ -4,7 +4,7 @@ import os
 from AudioDataPackage.AudioPreprocessing.CutAudioData import CutAudioData as cut
 
 
-cut.SayHi(os.getcwd() + "\\AudioTestData\\bruh.wav")
+snippets = cut.getSnippets(os.getcwd() + "\\AudioTestData\\bruh.wav")
 
 
 '''

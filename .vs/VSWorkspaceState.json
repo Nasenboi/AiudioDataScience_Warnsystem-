@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AudioDataPackage",
+    "\\AudioDataPackage\\AudioPreprocessing",
+    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData"
   ],
   "SelectedNode": "\\main.py",
   "PreviewInSolutionExplorer": false
