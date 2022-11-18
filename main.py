@@ -1,5 +1,6 @@
 #Hier werde ich nur die Basics von librosa testen ^^
-#import os
+import os
+import pandas as pd
 import librosa
 import librosa.util
 #from AudioDataPackage.AudioPreprocessing.CutAudioData import CutAudioData as cut
@@ -7,13 +8,33 @@ import librosa.util
 
 
 # 1. Get the file path to an included audio example
-filename = 'AudioTestData/bruh.wav'
+path = 'F:\\Raw_Audio\\'
 
-waveform, samplerate = librosa.load(filename)
+os.chdir(path)
 
-frame_length = samplerate
-hop_length = frame_length
+filenames = os.listdir()
 
-snippets = librosa.util.frame(waveform, frame_length, hop_length)
 
-print(snippets)
+data_dic = {
+    'filename': [],
+    'numSamples': [],
+    'sampleRate': []
+}
+
+print("Filenames: \n", filenames)
+
+for i in filenames:
+    filepath = os.path.join(path, i)
+    y, sr = librosa.load(filepath)
+    data_dic['filename'].append(i)
+    data_dic['numSamples'].append(len(y))
+    data_dic['sampleRate'].append(sr)
+
+
+print("Put in dic")
+
+df = pd.DataFrame(data_dic)
+
+df.to_csv('F:\\audio_data.csv', index=False)
+
+print("made csv :)")
