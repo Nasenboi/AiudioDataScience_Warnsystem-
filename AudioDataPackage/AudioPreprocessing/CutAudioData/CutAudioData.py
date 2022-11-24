@@ -1,24 +1,40 @@
-import math
-#import numpy as np
+#Hier werde ich nur die Basics von librosa testen ^^
+import os
+import pandas as pd
 import librosa
-#import matplotlib.pyplot as plt
-#import librosa.display
+import librosa.util
 
-def getSnippets(filename):
-    waveform, samplerate = librosa.load(filename)
-    #waveform, _ = librosa.effects.trim(waveform)
 
-    snippets = []
+if __name__ == "__main__":
+    # 1. Get the file path to an included audio example
+    path = 'D:\\Raw_Audio\\'
 
-    numSnippets = math.floor(len(waveform) / samplerate)
-    print(waveform)
-    '''
-    for i in range(0, numSnippets, 2):
-        start = i*samplerate
-        stop = start + samplerate
+    os.chdir(path)
 
-        snippets[i] = waveform[0][start:stop]
-        snippets[i+1] = waveform[1][start:stop]
-'''
+    filenames = os.listdir()
 
-    return snippets
+
+    data_dic = {
+        'filename': [],
+        'numSamples': [],
+        'sampleRate': []
+    }
+
+    print("Filenames: \n", filenames)
+
+    for i in filenames:
+        filepath = os.path.join(path, i)
+        y, sr = librosa.load(filepath) #, sr = 44100
+        librosa.frames
+        data_dic['filename'].append(i)
+        data_dic['numSamples'].append(len(y))
+        data_dic['sampleRate'].append(sr)
+
+
+    print("Put in dic")
+
+    df = pd.DataFrame(data_dic)
+
+    df.to_csv('D:\\audio_data.csv', index=False)
+
+    print("made csv :)")

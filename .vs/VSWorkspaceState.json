@@ -3,7 +3,9 @@
     "",
     "\\AudioDataPackage",
     "\\AudioDataPackage\\AudioPreprocessing",
-    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData"
+    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData",
+    "\\AudioDataPackage\\AudioPreprocessing\\LabelAudioData",
+    "\\AudioDataPackage\\AudioPreprocessing\\SortAudioData"
   ],
   "SelectedNode": "\\main.py",
   "PreviewInSolutionExplorer": false
