@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\AudioDataPackage",
-    "\\AudioDataPackage\\AudioPreprocessing",
+    "\\AudioDataPackage\\ArtificialTraining",
     "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData",
     "\\AudioDataPackage\\AudioPreprocessing\\LabelAudioData",
     "\\AudioDataPackage\\AudioPreprocessing\\SortAudioData"
   ],
-  "SelectedNode": "\\main.py",
+  "SelectedNode": "\\AudioDataPackage\\ArtificialTraining\\NNTest.py",
   "PreviewInSolutionExplorer": false
 }

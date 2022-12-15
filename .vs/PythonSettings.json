@@ -1,4 +1,4 @@
 {
-  "Interpreter": "CondaEnv|CondaEnv|audio_data_science",
-  "SuppressEnvironmentCreationPrompt": true
+  "SuppressEnvironmentCreationPrompt": true,
+  "Interpreter": "CondaEnv|CondaEnv|audio_data_science"
 }
