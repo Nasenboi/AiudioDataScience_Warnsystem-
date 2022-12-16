@@ -72,4 +72,3 @@ if __name__ == '__main__':
             os.makedirs(args.destination_dir)
         download(args)
 
-

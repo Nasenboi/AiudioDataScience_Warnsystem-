@@ -3,10 +3,9 @@
     "",
     "\\AudioDataPackage",
     "\\AudioDataPackage\\ArtificialTraining",
-    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData",
-    "\\AudioDataPackage\\AudioPreprocessing\\LabelAudioData",
-    "\\AudioDataPackage\\AudioPreprocessing\\SortAudioData"
+    "\\AudioDataPackage\\AudioSetDownloader",
+    "\\AudioDataPackage\\AudioSetDownloader\\core"
   ],
-  "SelectedNode": "\\AudioDataPackage\\ArtificialTraining\\NNTest.py",
+  "SelectedNode": "\\main.py",
   "PreviewInSolutionExplorer": false
 }
