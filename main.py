@@ -1,19 +1,16 @@
 import os
+#import AudioDataPackage.AudioSetDownloader
 
-from AudioDataPackage.AudioPreprocessing.CutAudioData import CutAudioData as cut
 
-path = 'D:\\Final_Audio_Data\\'
+os.chdir(os.getcwd() + "/AudioDataPackage/AudioSetDownloader");
 
-def printDirs(filename):
-    print(filename)
-    try:
-        os.chdir(filename)
+print(os.getcwd())
 
-        new_names = os.listdir()
-        for n in new_names:
-            f = os.path.join(filename, n)
-            printDirs(f)
-    except:
-        return;
+destPath = input("Please give me a destination path! \n");
+classDownload =  input("And give me a class to download! \n")
 
-printDirs(path)
+print("python3 process.py download -c \"" + classDownload + "\" -d \"" + destPath + "\"");
+try:
+    os.system("python3 process.py download -c \"" + classDownload + "\" -d \"" + destPath + "\"");
+except:
+    print("Error!")
