@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\AudioDataPackage",
-    "\\AudioDataPackage\\ArtificialTraining",
-    "\\AudioDataPackage\\AudioSetDownloader",
-    "\\AudioDataPackage\\AudioSetDownloader\\core"
+    "\\AudioDataPackage\\AudioPreprocessing",
+    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData"
   ],
-  "SelectedNode": "\\main.py",
+  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\Downloader.py",
   "PreviewInSolutionExplorer": false
 }
