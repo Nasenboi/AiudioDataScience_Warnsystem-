@@ -4,6 +4,8 @@
     "\\AudioAugmentation",
     "\\AudioAugmentation\\.ipynb_checkpoints",
     "\\AudioDataPackage",
+    "\\AudioDataPackage\\AudioPreprocessing",
+    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData",
     "\\AudioDataPackage\\AudioSetDownloader",
     "\\AudioDataPackage\\AudioSetDownloader\\core"
   ],
