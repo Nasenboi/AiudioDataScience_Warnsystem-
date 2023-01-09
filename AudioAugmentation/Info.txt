@@ -34,3 +34,9 @@ https://github.com/iver56/audiomentations
         - Integrates with Keras / PyTorch
         - CPU only
 
+
+
+pip install librosa
+pip install tensorflow
+pip install tensorflow_io
+pip install audiomentations
