@@ -1,0 +1,86 @@
+sourcePath = os.path.join(path, "AudioSet")
+os.chdir(sourcePath)
+
+#Get the subfolders:
+subFolders = os.listdir();
+for f in subFolders:
+    audioPath = os.path.join(sourcePath, f)
+    if os.path.isdir(audioPath):
+        print("Ordner:")
+        print(f)
+        os.chdir(audioPath)
+        audioFiles = os.listdir()
+        
+        #Categorization
+        if f == "Bird":
+            mainSound  = "animal"
+            threat     = 2
+            salience   = 5
+            importance = 1
+        elif f == "Bicycle bell":
+            mainSound  = "bicycle_bell"
+            threat     = 5
+            salience   = 7
+            importance = 9
+        elif f == "Car":
+            mainSound  = "exterior"
+            threat     = 2
+            salience   = 3
+            importance = 3
+        elif f == "Emergency Vehicle":
+            mainSound  = "emergency_vehicle"
+            threat     = 4
+            salience   = 9
+            importance = 8
+        elif f == "Environmental noise":
+            mainSound  = "exterior"
+            threat     = 0
+            salience   = 3
+            importance = 0
+        elif f == "Explosion":
+            mainSound  = "explosion"
+            threat     = 9
+            salience   = 9
+            importance = 9
+        elif f == "Fire alarm":
+            mainSound  = "siren"
+            threat     = 6
+            salience   = 9
+            importance = 9
+        elif f == "Gunshot":
+            mainSound  = "gunshot"
+            threat     = 9
+            salience   = 9
+            importance = 9
+        elif f == "Screaming":
+            mainSound  = "screaming"
+            threat     = 5
+            salience   = 8
+            importance = 5
+        elif f == "Siren":
+            mainSound  = "siren"
+            threat     = 8
+            salience   = 9
+            importance = 9
+        else:
+            print("Du opfer hast was falsch geschrieben!")
+
+        
+        for a in audioFiles:
+            try:
+                fName = a[:-4]
+                if fName not in data_dic['filename']:
+                    filepath = os.path.join(audioPath, a)
+                    with wave.open(filepath) as aFile:
+                        sr = aFile.getframerate()
+                        length = aFile.getnframes() / sr
+                        if length <= 0.5:
+                            print("Datei:" + fName)
+                            print("Datei zu kurz, wird nicht kopiert/beschriftet!")
+                        else:
+                                appendToDatadic(fName, mainSound, length, sr, 3, 0, 1, 0, threat, salience, importance)
+                                sh.copy(filepath, destPath)
+            except:
+                print("Datei:" + fName)
+                print("Failed to append File to Dict")
+                failedFiles.append(a)

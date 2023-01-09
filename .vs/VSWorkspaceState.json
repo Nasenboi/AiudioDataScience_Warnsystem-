@@ -1,10 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\AudioAugmentation",
+    "\\AudioAugmentation\\.ipynb_checkpoints",
     "\\AudioDataPackage",
     "\\AudioDataPackage\\AudioPreprocessing",
-    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData"
+    "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData",
+    "\\AudioDataPackage\\AudioSetDownloader",
+    "\\AudioDataPackage\\AudioSetDownloader\\core"
   ],
-  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\Downloader.py",
+  "SelectedNode": "\\main.py",
   "PreviewInSolutionExplorer": false
 }

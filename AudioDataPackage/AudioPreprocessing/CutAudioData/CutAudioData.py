@@ -4,7 +4,7 @@ import pandas as pd
 import librosa
 import librosa.util
 
-
+'''
 if __name__ == "__main__":
     # 1. Get the file path to an included audio example
     path = 'D:\\Raw_Audio\\'
@@ -38,3 +38,4 @@ if __name__ == "__main__":
     df.to_csv('D:\\audio_data.csv', index=False)
 
     print("made csv :)")
+    '''
