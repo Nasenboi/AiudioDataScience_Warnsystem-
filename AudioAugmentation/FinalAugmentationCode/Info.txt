@@ -1,0 +1,42 @@
+https://github.com/iver56/audiomentations
+
+- Raw Audio vs. Spectrogram Augmentation
+
+    - Raw Audio
+        - Time shifting
+        - Time streching
+        - Pitch scaling
+        - Noise addition
+        - Impulse response addition
+        - Low/High/Bandpass filters
+        - Polarity inversions
+        - Random gain.....
+
+    - Spectrogram
+        - Time masking (y-achse)
+        - Frequency masking (x-achse)
+        - Time streching
+        - Pitch scaling
+
+- Augmentation Libraryies
+
+    - Librosa (for minimal data augmentation needs)
+        - Good Audio Processing library
+        - Open source
+        - Time strech / pitch shifting
+        - Offline Augmentation
+        
+    - audiomentations (for complex augmentation needs) https://github.com/iver56/audiomentations
+        - Open source
+        - Loads of transformations (raw audio & spectrograms)
+        - Supports augmentation chains (compositions)
+        - Online & offline augmentation
+        - Integrates with Keras / PyTorch
+        - CPU only
+
+
+
+pip install librosa
+pip install tensorflow
+pip install tensorflow_io
+pip install audiomentations
