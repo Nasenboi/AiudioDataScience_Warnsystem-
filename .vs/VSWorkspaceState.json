@@ -2,12 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\AudioAugmentation",
-    "\\AudioAugmentation\\.ipynb_checkpoints",
+    "\\AudioAugmentation\\TrynError",
+    "\\AudioAugmentation\\TrynError\\DirectDataAugment",
     "\\AudioDataPackage",
-    "\\AudioDataPackage\\AudioPreprocessing",
     "\\AudioDataPackage\\AudioPreprocessing\\CutAudioData",
-    "\\AudioDataPackage\\AudioSetDownloader",
-    "\\AudioDataPackage\\AudioSetDownloader\\core"
+    "\\AudioDataPackage\\AudioSetDownloader\\core",
+    "\\AudioDataPackage\\AudioToInputData"
   ],
   "SelectedNode": "\\main.py",
   "PreviewInSolutionExplorer": false
