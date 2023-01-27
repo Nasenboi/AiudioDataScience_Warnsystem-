@@ -8,8 +8,8 @@ import librosa
 
 
 #The general Path to the Audiodata and the Destinationpath
-#path = r"F:\Raw_Audio"
-audioPath = r"F:\Labeled_Audio"
+path = r"F:\Raw_Audio"
+audioPath = r"F:\Labeled_Audio\\"
 csvPath = r"F:\labeled_audio_data.csv"
 
 #Some nice Functions
@@ -74,7 +74,7 @@ def getNextUnusedFile():
     global fileNum
     #fileNum+=1
     lastIndex = len(data_dic['isChecked'])-1
-    while data_dic['isChecked'][fileNum] > 0 and fileNum < lastIndex:
+    while data_dic['isChecked'][fileNum] > 0 and fileNum < lastIndex and data_dic['quality'] != 3:
         fileNum+=1
 
 #Button functions
@@ -93,6 +93,8 @@ def saveAndLoad():
 
 #THE DELETE FUNCTION WONT DELETE THE AUDIO FILE
 def deleteAudio():
+    aFile = audioPath + data_dic['filename'][fileNum] + ".wav"
+    os.remove(aFile);
     del data_dic['filename'][fileNum]
     del data_dic['mainSound'][fileNum]
     del data_dic['length'][fileNum]
