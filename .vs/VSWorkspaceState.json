@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\AudioAugmentation",
-    "\\AudioAugmentation\\TrynError\\DirectDataAugment",
     "\\AudioDataPackage",
-    "\\AudioDataPackage\\AudioToInputData"
+    "\\AudioDataPackage\\AudioSetDownloader"
   ],
-  "SelectedNode": "\\main.py",
+  "SelectedNode": "\\AudioDataPackage\\AudioSetDownloader",
   "PreviewInSolutionExplorer": false
 }
