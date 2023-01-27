@@ -8,9 +8,9 @@ import librosa
 
 
 #The general Path to the Audiodata and the Destinationpath
-path = r"E:\Raw_Audio"
-audioPath = r"E:\Labeled_Audio\\"
-csvPath = r"E:\labeled_audio_data.csv"
+#path = r"F:\Raw_Audio"
+audioPath = r"F:\Labeled_Audio"
+csvPath = r"F:\labeled_audio_data.csv"
 
 #Some nice Functions
 def appendToDatadic (fName, ms, length, sr, q, ic, im, ich, the, sal, imp):

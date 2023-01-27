@@ -14,11 +14,11 @@ def butter_lowpass_filter(data, cutoff, fs, order=5):
 
 def audioToInputData(samples, sampleRateSample, blockSize, hopSize, specBlockSize, specHopSize, sampleRateSpec = None):
     try:
-        if(sampleRateSpec):
+        #if(sampleRateSpec):
             #Apply a Low-Pass Filter and resample, idk if this is nescesarry, we vould just load() librosa with a certain samplerate,
             #but idk if its LP to get rid of aliasing
-            samples = butter_lowpass_filter(data=samples, cutoff=7000, fs=sampleRateSample)
-            samples = librosa.resample(y=samples, orig_sr=sampleRateSample, target_sr=sampleRateSpec, axis = 0)
+            #samples = butter_lowpass_filter(data=samples, cutoff=7000, fs=sampleRateSample)
+            #samples = librosa.resample(y=samples, orig_sr=sampleRateSample, target_sr=sampleRateSpec, axis = 0)
 
         #Calculate initial variables
         N = len(samples)

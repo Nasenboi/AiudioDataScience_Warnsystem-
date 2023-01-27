@@ -3,8 +3,14 @@
     "",
     "\\AudioAugmentation",
     "\\AudioDataPackage",
-    "\\AudioDataPackage\\AudioSetDownloader"
+    "\\AudioDataPackage\\ArtificialTraining",
+    "\\AudioDataPackage\\AudioPreprocessing",
+    "\\AudioDataPackage\\AudioSetDownloader",
+    "\\AudioDataPackage\\AudioToInputData",
+    "\\AudioDataPackage\\__pycache__",
+    "\\AudioTestData",
+    "\\NeuralNetworkStuff"
   ],
-  "SelectedNode": "\\AudioDataPackage\\AudioSetDownloader",
+  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\LabelProgram.py",
   "PreviewInSolutionExplorer": false
 }

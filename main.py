@@ -4,7 +4,7 @@ import librosa.display
 import numpy as np
 import matplotlib.pyplot as plt
 
-path = r"F:\Labeled_Audio\166101-5-2-4.wav"
+path = r"F:\Labeled_Audio\135526-6-7-0.wav"
 
 sampleRateSpec = 16000
 
@@ -14,8 +14,9 @@ samples, sampleRate = librosa.load(path, sr=sampleRateSpec)
 #sampleRate = 48000;
 #samples = np.array(sampleList)
 
-frames = atid.audioToInputData(samples=samples, sampleRateSample=sampleRate, blockSize=16000, hopSize=8000, specBlockSize=2048, specHopSize=512)
-S = np.abs(frames[len(frames)-1])
+frames = atid.audioToInputData(samples=samples, sampleRateSample=sampleRate, blockSize=32000, hopSize=8000, specBlockSize=2048, specHopSize=256)
+S = np.abs(frames[0])
+
 
 fig, ax = plt.subplots()
 img = librosa.display.specshow(librosa.amplitude_to_db(S, ref=np.max), y_axis='log', x_axis='time', ax=ax, sr = sampleRateSpec)
