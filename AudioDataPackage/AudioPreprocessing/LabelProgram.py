@@ -120,7 +120,7 @@ def closeApp():
         root.destroy()
 
 #With this Code Ill sort all the Audiodate we got into one Folder and label it
-##with a csv File containing following information (Ziemlich selbsterklärend lol):
+##with a csv File containing following information (Ziemlich selbsterklï¿½rend lol):
 '''   
     'filename':     Name of the File (without .wav)
     'mainSound':    The most important sound of the audiofile
