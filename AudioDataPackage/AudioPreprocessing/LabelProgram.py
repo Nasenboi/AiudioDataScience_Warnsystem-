@@ -5,7 +5,7 @@ from tkinter import messagebox
 import sounddevice as sd
 import librosa
 
-
+import threading
 
 #The general Path to the Audiodata and the Destinationpath
 path = r"F:\Raw_Audio"
@@ -55,6 +55,15 @@ def reloadValues():
     if currCut==1: cutBox.select()
     else: cutBox.deselect()
 
+#Threading function
+'''
+def printit():
+    global stopper, stopper2
+    threading.Timer(0.05, printit).start()
+    if stopper and stopper2:
+        saveAndLoad()
+'''
+
 #RIGHT NOW THE CHECKBOXES WONT CHANGE THE CSV FILE, IF ITS NEEDED SOMEWHERE PLS TELL ME
 def overwriteOldValues(fileNum):
     global threatSlider, salienceSlider, importanceSlider, qualitySlider, fileNameL, mainSounL, mixedBox, cutBox
@@ -71,24 +80,34 @@ def overwriteOldValues(fileNum):
     '''
 
 def getNextUnusedFile():
-    global fileNum
-    #fileNum+=1
+    global fileNum#, stopper2
+    fileNum+=1
     lastIndex = len(data_dic['isChecked'])-1
-    while data_dic['isChecked'][fileNum] > 0 and fileNum < lastIndex and data_dic['quality'] != 3:
+    while not (data_dic['isChecked'][fileNum] == 0 and data_dic['quality'][fileNum] == 3) and fileNum < lastIndex:
         fileNum+=1
+
+    if fileNum == lastIndex:
+        messagebox.askokcancel("Done!", "   You can quit now! \n (The data will be saved!)")
+        fileNum = lastIndex-1;
+        #stopper2 = False
+            
 
 #Button functions
 def playAudio():
+    global fileNum
     aFile = audioPath + currFilename + ".wav"
     y, sr = librosa.load(aFile)
     sd.play(y, sr)
 
 
 def saveAndLoad():
+    #global stopper
+    stopper = False
     overwriteOldValues(fileNum)
     getNextUnusedFile()
     getCurrentInput(fileNum)
-    reloadValues()    
+    reloadValues()
+    #stopper = True
 
 
 #THE DELETE FUNCTION WONT DELETE THE AUDIO FILE
@@ -108,7 +127,7 @@ def deleteAudio():
     del data_dic['importance'][fileNum]
     getNextUnusedFile()
     getCurrentInput(fileNum)
-    reloadValues()  
+    reloadValues()
 
 def closeApp():
     global data_dic
@@ -246,8 +265,10 @@ mainSounL.grid      (row=0, column=2, columnspan=2, padx = 5, pady=5, sticky='s'
 
 reloadValues()
 root.protocol("WM_DELETE_WINDOW", closeApp)
+#stopper = True
+#stopper2 = True
+#printit()
 root.mainloop()
-
 
 '''
 #Overwrite the list of lables
@@ -255,3 +276,5 @@ dataFrame = pd.DataFrame.from_dict(data_dic)
 
 dataFrame.to_csv(csvPath, header='column_names')
 '''
+
+
