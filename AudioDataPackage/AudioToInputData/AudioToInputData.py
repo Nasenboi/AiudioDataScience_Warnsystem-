@@ -1,4 +1,5 @@
 #import os
+from pickletools import uint8
 import librosa
 import numpy as np
 import scipy.signal as sig
@@ -42,7 +43,7 @@ def audioToInputData(samples, sampleRateSample, blockSize, hopSize, specBlockSiz
             spec = librosa.stft(frame, n_fft=specBlockSize, hop_length=specHopSize)
             specList.append(spec)
 
-        return specList    
+        return np.array(specList)
     except:
         print("Something went wrong!")
         return []

@@ -11,6 +11,6 @@
     "\\AudioTestData",
     "\\NeuralNetworkStuff"
   ],
-  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\DataDescription.py",
+  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\LabelProgram.py",
   "PreviewInSolutionExplorer": false
 }

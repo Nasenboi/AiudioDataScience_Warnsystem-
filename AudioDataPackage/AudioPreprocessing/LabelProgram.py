@@ -8,9 +8,9 @@ import librosa
 import threading
 
 #The general Path to the Audiodata and the Destinationpath
-path = r"/Users/nickjonas/Desktop/Labeled_Audio/"
-audioPath = r"/Users/nickjonas/Desktop/Labeled_Audio/"
-csvPath = r"/Users/nickjonas/Desktop/labeled_audio_data.csv"
+#path = r"F:/Labeled_Audio/"
+audioPath = r"F:/Labeled_Audio/"
+csvPath = r"F:/labeled_audio_data.csv"
 
 #Some nice Functions
 def appendToDatadic (fName, ms, length, sr, q, ic, im, ich, the, sal, imp):
@@ -63,7 +63,6 @@ def printit():
     if stopper and stopper2:
         saveAndLoad()
 '''
-
 #RIGHT NOW THE CHECKBOXES WONT CHANGE THE CSV FILE, IF ITS NEEDED SOMEWHERE PLS TELL ME
 def overwriteOldValues(fileNum):
     global threatSlider, salienceSlider, importanceSlider, qualitySlider, fileNameL, mainSounL, mixedBox, cutBox
@@ -83,7 +82,8 @@ def getNextUnusedFile():
     global fileNum#, stopper2
     fileNum+=1
     lastIndex = len(data_dic['isChecked'])-1
-    while not (data_dic['isChecked'][fileNum] == 0 and data_dic['quality'][fileNum] == 3) and fileNum < lastIndex:
+    #not (data_dic['isChecked'][fileNum] == 0 and data_dic['quality'][fileNum] == 3)
+    while data_dic['isChecked'][fileNum] != 0 and fileNum < lastIndex:
         fileNum+=1
 
     if fileNum == lastIndex:
@@ -102,7 +102,7 @@ def playAudio():
 
 def saveAndLoad():
     #global stopper
-    stopper = False
+    #stopper = False
     overwriteOldValues(fileNum)
     getNextUnusedFile()
     getCurrentInput(fileNum)
