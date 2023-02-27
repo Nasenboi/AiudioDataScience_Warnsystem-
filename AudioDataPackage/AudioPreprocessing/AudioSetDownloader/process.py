@@ -1,7 +1,25 @@
-# Processing utility for AudioSet dataset
-# Sort, find and download the entire, or subsets of, AudioSet
+'''
+Title:
+    Github: audioset-processing
+Version:
+    0
 
-# Aoife McDonagh
+Author(s):
+    Aoife McDonagh
+
+Creation Date:
+    ?
+Update(s):
+    Date       | Changes
+    24.02.2023 | Added the header, eventho this is not our code!
+
+Comment(s):
+    Processing utility for AudioSet dataset
+    Sort, find and download the entire, or subsets of, AudioSet
+
+Github link:
+    https://github.com/aoifemcdonagh/audioset-processing
+'''
 
 import argparse
 import os

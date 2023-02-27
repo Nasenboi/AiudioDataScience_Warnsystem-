@@ -1,10 +1,29 @@
-from dataclasses import dataclass
+'''
+Title:
+	DataDescription.py
+Version:
+    0
+
+Author(s):
+    Christian
+
+Creation Date:
+    ?
+Update(s):
+    Date       | Changes
+    24.02.2023 | Added Header
+
+Comment(s):
+    This code gives a basic data description of the current audioset.
+	It will only read the csv file of the given path, so it cannot really give
+	informations about the audiofiles itself.
+'''
+
+
 import os
 import pandas as pd
 
 csvPath = r"F:\labeled_audio_data.csv"
-
-
 
 if __name__ == "__main__":
 	dataFrame  = pd.read_csv(csvPath)

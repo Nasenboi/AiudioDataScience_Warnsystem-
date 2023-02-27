@@ -1,0 +1,68 @@
+This File is for a basic Kanban organizing structure.
+It lists all tasks in three different stages: ToDo, Doing and Done.
+Future tasks can be listed inside the upcomming section!
+The basic format of each task should look like this:
+
+	- Title -
+	TaskID:			XY
+	Description:	What is to do, in a few words.
+	Depends on:		What Tasks do have to be done BEFORE this task can be tackled?
+	Start/End Date:	Now / Later
+	Duration:       What time should / would the task take? 
+	Responsible:	Who should do / manage this task?
+
+
+Upcomming:
+	- Perfect the presentation -
+	Description:	Redesign it and add cool images, so it does not look "Powerpointish" anymore
+					Also look for spelling errors and better scentence structures I guess.
+	TaskID:			6
+	Depends on:		5
+	Start/End Date:	Way Later
+	Duration:       5hrs?!
+	Responsible:	Chris, Nick
+
+	- Write the presentation -
+	Description:	Write the basic blueprint of the presentation in powerpoint or its apple version
+	TaskID:			5
+	Depends on:		3
+	Start/End Date:	Later
+	Duration:		3hrs max?!
+	Responsible:	Nick
+
+	- Create the basic Neural Network -
+	Description:	Follow the TensorflowBasics Notebook in the Archive to create our basic CNN
+	TaskID:			4
+	Depends on:		
+	Start/End Date:	Later
+	Duration:       1hr
+	Responsible:	Chris, Nick!
+
+ToDo:
+	- Structure the Presentation -
+	Description:	What is to do, in a few words.
+	TaskID:			3
+	Depends on:		-
+	Start/End Date:	Later
+	Duration:		2hrs
+	Responsible:	Nick?
+
+	- Turn the AudioData into spectrogram forms -
+	TaskID:			2
+	Depends on:		-
+	Description:	...and save it as np.arrays
+	Start/End Date:	soon!
+	Duration:		1-2hrs
+	Responsible:	Chris
+
+Doing:
+	- Reorganzie the git repo -
+	Description:	Currently the code is kind of a mess.
+					For the sake of every reader and code writer, it should be reorganized.
+	TaskID:			1
+	Depends on:		-
+	Start/End Date:	24.02.2023 / 25.02.2023 (hopefully!)
+	Duration:		3hrs
+	Responsible:	Chris
+
+Done:

@@ -1,16 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AudioAugmentation",
     "\\AudioDataPackage",
-    "\\AudioDataPackage\\ArtificialTraining",
     "\\AudioDataPackage\\AudioPreprocessing",
-    "\\AudioDataPackage\\AudioSetDownloader",
-    "\\AudioDataPackage\\AudioToInputData",
-    "\\AudioDataPackage\\__pycache__",
-    "\\AudioTestData",
-    "\\NeuralNetworkStuff"
+    "\\AudioDataPackage\\AudioPreprocessing\\AudioAugmentation\\FinalAugmentationCode\\.ipynb_checkpoints",
+    "\\AudioDataPackage\\AudioPreprocessing\\DatasetSorting",
+    "\\AudioDataPackage\\AudioToInputData"
   ],
-  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\LabelProgram.py",
+  "SelectedNode": "\\deleteMe.py",
   "PreviewInSolutionExplorer": false
 }

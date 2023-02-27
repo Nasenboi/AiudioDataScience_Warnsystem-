@@ -1,3 +1,40 @@
+'''
+Title:
+    USKSorter.py
+Version:
+    0
+
+Author(s):
+    Christian
+
+Creation Date:
+    ?
+Update(s):
+    Date       | Changes
+    24.02.2023 | Added Header
+
+Comment(s):
+    This code was used to sort all the audiodata from the Uurban Sound 8k Dataset
+    The labeled and sorted Audiodata will be saved into a csv File
+    containing following information: 
+        'filename':     Name of the File (without .wav)
+        'mainSound':    The most important sound of the audiofile
+        'length':       Length of the File in s
+        'sampleRate':   Samplerate in Hz
+        'quality':      Rated Quality of the File (Noise, Loundness, etc.)
+        'isCut':        Is the File part of something bigger
+        'is Mixed':     Does the Audio Signal contain multiple Audiosources
+        'isChecked':    How many Times was the File quality Checked
+        'threat':       Threat level of main Audio source (0-9)
+        'salience':     Salience of main Audio source (0-9)
+        'importance':   Importance of main Audio source (0-9)
+
+    And always Remember: 0 is false!
+
+Link to the Dataset:
+    https://urbansounddataset.weebly.com/urbansound8k.html
+'''
+
 import csv
 import os
 import wave
@@ -19,25 +56,6 @@ def appendToDatadic (fName, ms, length, sr, q, ic, im, ich, the, sal, imp):
     data_dic['threat'].append(the)
     data_dic['salience'].append(sal)
     data_dic['importance'].append(imp)
-
-
-#With this Code Ill sort all the Audiodate we got into one Folder and label it
-##with a csv File containing following information (Ziemlich selbsterklärend lol):
-'''   
-    'filename':     Name of the File (without .wav)
-    'mainSound':    The most important sound of the audiofile
-    'length':       Length of the File in s
-    'sampleRate':   Samplerate in Hz
-    'quality':      Rated Quality of the File (Noise, Loundness, etc.)
-    'isCut':        Is the File part of something bigger
-    'is Mixed':     Does the Audio Signal contain multiple Audiosources
-    'isChecked':    How many Times was the File quality Checked
-    'threat':       Threat level of main Audio source (0-9)
-    'salience':     Salience of main Audio source (0-9)
-    'importance':   Importance of main Audio source (0-9)
-'''
-#And always Remember: 0 is false!
-
 
 #The general Path to the Audiodata and the Destinationpath
 path = r"F:\Raw_Audio"
@@ -143,7 +161,7 @@ for f in range(len(uskDic['fsID'])):
         salience   = 5
         importance = 0
     else:
-        print("Du opfer hast was falsch geschrieben!")
+        print("Something is not spelled correctly!")
         print(uskDic['class'][f])
 
     try:

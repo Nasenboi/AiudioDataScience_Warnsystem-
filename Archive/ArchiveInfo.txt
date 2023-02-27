@@ -1,0 +1,6 @@
+The Archive is the place for all the old code
+
+The code is not in use anymore, because the tasks these codes were for are already done.
+I saved this code as a reference for future projects or for possible error corrections
+
+Other code snippets that may find a use some for other tasks are in the AudioDataPackage!

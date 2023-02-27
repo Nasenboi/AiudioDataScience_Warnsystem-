@@ -1,3 +1,25 @@
+'''
+Title:
+    LabelProgram.py
+Version:
+    0
+
+Author(s):
+    Christian
+
+Creation Date:
+    ?
+Update(s):
+    Date       | Changes
+    24.02.2023 | Added Header
+
+Comment(s):
+    This code will update the csv for the audioset to verify each audiofile for its target values.
+    Because without this set all the audiofiles are machine labeled and mostly with the same target values.
+    This is not good, because some files, especially from the Youtube8M AudioSet have very special features.
+    Also it is possible to delete wrong labeled, or unusable audiofiles, with the help of this code.
+'''
+
 import os
 import pandas as pd
 from tkinter import *
@@ -5,7 +27,7 @@ from tkinter import messagebox
 import sounddevice as sd
 import librosa
 
-import threading
+#import threading
 
 #The general Path to the Audiodata and the Destinationpath
 #path = r"F:/Labeled_Audio/"
@@ -55,7 +77,8 @@ def reloadValues():
     if currCut==1: cutBox.select()
     else: cutBox.deselect()
 
-#Threading function
+#Threading function, for debugging purposes,
+#all of the "stoppers" below belong to this function too
 '''
 def printit():
     global stopper, stopper2
@@ -63,6 +86,7 @@ def printit():
     if stopper and stopper2:
         saveAndLoad()
 '''
+
 #RIGHT NOW THE CHECKBOXES WONT CHANGE THE CSV FILE, IF ITS NEEDED SOMEWHERE PLS TELL ME
 def overwriteOldValues(fileNum):
     global threatSlider, salienceSlider, importanceSlider, qualitySlider, fileNameL, mainSounL, mixedBox, cutBox
@@ -109,8 +133,7 @@ def saveAndLoad():
     reloadValues()
     #stopper = True
 
-
-#THE DELETE FUNCTION WONT DELETE THE AUDIO FILE
+#THE DELETE FUNCTION WILL NOW DELETE THE AUDIO FILE
 def deleteAudio():
     aFile = audioPath + data_dic['filename'][fileNum] + ".wav"
     os.remove(aFile);
@@ -137,25 +160,6 @@ def closeApp():
 
         dataFrame.to_csv(csvPath, header='column_names')
         root.destroy()
-
-#With this Code Ill sort all the Audiodate we got into one Folder and label it
-##with a csv File containing following information (Ziemlich selbsterkl�rend lol):
-'''   
-    'filename':     Name of the File (without .wav)
-    'mainSound':    The most important sound of the audiofile
-    'length':       Length of the File in s
-    'sampleRate':   Samplerate in Hz
-    'quality':      Rated Quality of the File (Noise, Loundness, etc.)
-    'isCut':        Is the File part of something bigger
-    'is Mixed':     Does the Audio Signal contain multiple Audiosources
-    'isChecked':    How many Times was the File quality Checked
-    'threat':       Threat level of main Audio source (0-9)
-    'salience':     Salience of main Audio source (0-9)
-    'importance':   Importance of main Audio source (0-9)
-'''
-#And always Remember: 0 is false!
-
-#failedFiles = [];
 
 #Python dictionary containing all the needed data for the labeling
 data_dic = {
@@ -269,12 +273,3 @@ root.protocol("WM_DELETE_WINDOW", closeApp)
 #stopper2 = True
 #printit()
 root.mainloop()
-
-'''
-#Overwrite the list of lables
-dataFrame = pd.DataFrame.from_dict(data_dic)
-
-dataFrame.to_csv(csvPath, header='column_names')
-'''
-
-
