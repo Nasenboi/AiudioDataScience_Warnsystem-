@@ -9,8 +9,8 @@ import threading
 
 #The general Path to the Audiodata and the Destinationpath
 #path = r"F:/Labeled_Audio/"
-audioPath = r"F:/Labeled_Audio/"
-csvPath = r"F:/labeled_audio_data.csv"
+audioPath = r"/Users/nickjonas/Desktop/Labeled_Audio/"
+csvPath = r"/Users/nickjonas/Desktop/labeled_audio_data.csv"
 
 #Some nice Functions
 def appendToDatadic (fName, ms, length, sr, q, ic, im, ich, the, sal, imp):
