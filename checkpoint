@@ -1,0 +1,2 @@
+model_checkpoint_path: "nice\\path\\myModelWeights"
+all_model_checkpoint_paths: "nice\\path\\myModelWeights"
