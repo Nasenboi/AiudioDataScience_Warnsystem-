@@ -1,3 +1,23 @@
+'''
+Title:
+
+Version:
+    0
+
+Author(s):
+    
+
+Creation Date:
+    
+Update(s):
+    Date       | Changes
+    
+
+Comment(s):
+    
+
+'''
+
 import audioop
 import os
 import pandas as pd

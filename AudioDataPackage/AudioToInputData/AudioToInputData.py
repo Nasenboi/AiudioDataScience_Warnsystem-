@@ -23,12 +23,13 @@ def audioToInputData(samples, sampleRateSample, blockSize, hopSize, specBlockSiz
 
         #Calculate initial variables
         N = len(samples)
+        '''
         if (N<blockSize):
-            print("Error: Num samples is too short!")
+            print("Warning: Num samples is very short!")
             return []
-        
+        '''
 
-        #Add zeros until a certain size
+        #Add zeros to a certain size
         if(N-blockSize % hopSize != 0):
             numToAdd = hopSize-((N-blockSize)%hopSize)
             toAdd = np.zeros(numToAdd)
@@ -41,7 +42,10 @@ def audioToInputData(samples, sampleRateSample, blockSize, hopSize, specBlockSiz
         specList = []
         for frame in audioFrames:
             spec = librosa.stft(frame, n_fft=specBlockSize, hop_length=specHopSize)
+            spec = librosa.amplitude_to_db(np.abs(spec), ref=np.max)
             specList.append(spec)
+
+        #print(len(specList))
 
         return np.array(specList)
     except:

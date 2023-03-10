@@ -1,12 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Archive",
+    "\\Archive\\CodeExperimentsAndTraining",
     "\\AudioDataPackage",
     "\\AudioDataPackage\\AudioPreprocessing",
-    "\\AudioDataPackage\\AudioPreprocessing\\AudioAugmentation\\FinalAugmentationCode\\.ipynb_checkpoints",
     "\\AudioDataPackage\\AudioPreprocessing\\DatasetSorting",
     "\\AudioDataPackage\\AudioToInputData"
   ],
-  "SelectedNode": "\\deleteMe.py",
+  "SelectedNode": "\\Archive\\allAudioDataToSpectrograms.py",
   "PreviewInSolutionExplorer": false
 }
