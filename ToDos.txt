@@ -22,6 +22,15 @@ Upcomming:
 	Duration:       5hrs?!
 	Responsible:	Chris, Nick
 
+	- Update the readme.md -
+	TaskID:			8
+	Description:	Write the readme.md for the github
+	Depends on:		
+	Start/End Date:	Later
+	Duration:       2h
+	Responsible:	Chris, Nick
+
+ToDo:
 	- Write the presentation -
 	Description:	Write the basic blueprint of the presentation in powerpoint or its apple version
 	TaskID:			5
@@ -29,6 +38,25 @@ Upcomming:
 	Start/End Date:	Later
 	Duration:		3hrs max?!
 	Responsible:	Nick
+
+	- Delete useless Audiodata -
+	TaskID:			7
+	Description:	Delete useless Audiodata
+	Depends on:		
+	Start/End Date:	13.03.2023
+	Duration:       2h 
+	Responsible:	Chris
+
+
+Doing:
+
+	- Structure the Presentation -
+	Description:	What is to do, in a few words.
+	TaskID:			3
+	Depends on:		-
+	Start/End Date:	Later
+	Duration:		2hrs
+	Responsible:	Chris, Nick
 
 	- Create the basic Neural Network -
 	Description:	Follow the TensorflowBasics Notebook in the Archive to create our basic CNN
@@ -38,14 +66,7 @@ Upcomming:
 	Duration:       1hr
 	Responsible:	Chris, Nick!
 
-ToDo:
-	- Structure the Presentation -
-	Description:	What is to do, in a few words.
-	TaskID:			3
-	Depends on:		-
-	Start/End Date:	Later
-	Duration:		2hrs
-	Responsible:	Nick?
+Done:
 
 	- Turn the AudioData into spectrogram forms -
 	TaskID:			2
@@ -55,8 +76,7 @@ ToDo:
 	Duration:		1-2hrs
 	Responsible:	Chris
 
-Doing:
-	- Reorganzie the git repo -
+		- Reorganzie the git repo -
 	Description:	Currently the code is kind of a mess.
 					For the sake of every reader and code writer, it should be reorganized.
 	TaskID:			1
@@ -64,5 +84,3 @@ Doing:
 	Start/End Date:	24.02.2023 / 25.02.2023 (hopefully!)
 	Duration:		3hrs
 	Responsible:	Chris
-
-Done:
