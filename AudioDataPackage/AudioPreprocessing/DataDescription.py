@@ -22,6 +22,7 @@ Comment(s):
 
 import os
 import pandas as pd
+from statistics import mean
 
 csvPath = r"F:\labeled_audio_data.csv"
 
@@ -49,6 +50,12 @@ if __name__ == "__main__":
 	for sound in sounds:
 		print("Sound: " + str(sound).ljust(17), end=" | ")
 		df = dataFrame[dataFrame["mainSound"] == sound]
-		print("Count:", df.shape[0])
-
+		print("Count:    ", df.shape[0])
+		allValues = [df.to_dict()['threat'].values(), df.to_dict()['salience'].values(), df.to_dict()['importance'].values()]
+		valueTypes = ["threat", "salience", "importance"]
+		for i in range(len(allValues)):
+			averageValue = mean(allValues[i])
+			print("Avg", valueTypes[i].ljust(10, " ") , ":", str(round(averageValue, 3)).ljust(5, " "), end=" | ")
+		print()
+		print()
 	print("||||||||||||||||||||||||||||||||||||||")

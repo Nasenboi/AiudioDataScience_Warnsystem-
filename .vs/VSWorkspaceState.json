@@ -4,10 +4,11 @@
     "\\Archive",
     "\\Archive\\CodeExperimentsAndTraining",
     "\\AudioDataPackage",
+    "\\AudioDataPackage\\ArtificialTraining",
     "\\AudioDataPackage\\AudioPreprocessing",
     "\\AudioDataPackage\\AudioPreprocessing\\DatasetSorting",
-    "\\AudioDataPackage\\AudioToInputData"
+    "\\AudioTestData"
   ],
-  "SelectedNode": "\\Archive\\allAudioDataToSpectrograms.py",
+  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\DataDescription.py",
   "PreviewInSolutionExplorer": false
 }
