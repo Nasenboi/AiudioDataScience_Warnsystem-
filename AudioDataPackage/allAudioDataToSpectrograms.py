@@ -5,7 +5,7 @@ Version:
     0
 
 Author(s):
-    Christian Böndgen
+    Christian Bï¿½ndgen
 
 Creation Date:
     ?
@@ -30,8 +30,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-audioPath = r"F:\Labeled_Audio"
-specPath = r"F:\Labeled_Specs"
+audioPath = r"/Users/nickjonas/Downloads/AUDAS/Labeled_Audio"
+specPath = r"/Users/nickjonas/Downloads/AUDAS/Labeled_Specs"
 
 sampleRateSpec = 16000
 
