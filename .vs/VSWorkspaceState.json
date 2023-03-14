@@ -4,11 +4,9 @@
     "\\Archive",
     "\\Archive\\CodeExperimentsAndTraining",
     "\\AudioDataPackage",
-    "\\AudioDataPackage\\ArtificialTraining",
     "\\AudioDataPackage\\AudioPreprocessing",
-    "\\AudioDataPackage\\AudioPreprocessing\\DatasetSorting",
-    "\\AudioTestData"
+    "\\AudioDataPackage\\AudioToInputData"
   ],
-  "SelectedNode": "\\AudioDataPackage\\AudioPreprocessing\\DataDescription.py",
+  "SelectedNode": "\\deleteUselessFiles.py",
   "PreviewInSolutionExplorer": false
 }
