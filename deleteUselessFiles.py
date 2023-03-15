@@ -100,25 +100,27 @@ def randomVal():
     return (random() - 0.5) * randRange
 
 
-cats = [["exterior",    8], ["animal",            3],
+cats = [["exterior",    5], ["animal",            2],
         ["siren",       0], ["emergency_vehicle", 0],
         ["gunshot",    99], ["screaming",        99],
-        ["explosion",  99], ["bicycle_bell",      0],
-        ["interior",    2], ["natural",           1],
-        ["human",      99], ["fireworks",        99],
-        ["clock_alarm", 0], ["car_horn",         99],
+        ["explosion",  99], ["bicycle_bell",     99],
+        ["interior",    1], ["natural",           0],
+        ["human",       2], ["fireworks",        99],
+        ["clock_alarm",99], ["car_horn",         99],
         ["fire",       99], ["crying_baby",      99]]
 
 counters = [0 for i in range(len(cats))]
+numClassFiles = [0 for i in range(len(cats))]
 
 #iterate though all files:
 for fileNum in sample(range(numFiles), numFiles):
     for i in range(len(cats)):
         if dataDict['mainSound'][fileNum] == cats[i][0]:
-            if counters[i] > cats[i][1] and cats[i][1] != 99:
+            if counters[i] > cats[i][1] and cats[i][1] != 99:# and numClassFiles[i] < 500
                 appendToDict()
                 newNumFiles += 1
                 counters[i]  = 0
+                numClassFiles[i] += 1
             counters[i]  += 1
             break
 
