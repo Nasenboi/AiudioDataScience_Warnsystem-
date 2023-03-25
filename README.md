@@ -4,6 +4,7 @@
 
 ## What is the Project about?
 
+Building an AI to detect daily sounds that could embody a thread to deaf people.
 
 ## What can you find in this GitHub?
 
