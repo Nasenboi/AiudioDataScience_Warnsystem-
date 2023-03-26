@@ -1,4 +1,5 @@
-# Audio Data Science Project: AI (CNN) driven audible threat detection for deaf/impaired people
+# Audio Data Science Project: <br />
+AI (CNN) driven audible threat detection for deaf/hearing-impaired people
 
 
 ## What is the Project about?
