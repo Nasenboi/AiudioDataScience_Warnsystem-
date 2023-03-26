@@ -43,6 +43,6 @@ Follow the instructions on the mainCodeV6.x.ipynb file
 ## About the Authors.
 
 Christian Böndgen & Nick Jonas Kuhoff 
-At University of Applied Sciences Düsseldorf
+@ University of Applied Sciences Düsseldorf
 
 ## Copyright
