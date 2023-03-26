@@ -1,5 +1,5 @@
-# Audio Data Science Project: <br />
-AI (CNN) driven audible threat detection for deaf/hearing-impaired people
+
+# Audio Data Science Project: ***AI driven audible threat detection for deaf/hearing-impaired people***
 
 
 ## What is the Project about?
@@ -12,7 +12,7 @@ Project goal: Being able to detect sounds that could be or lead to a serious thr
 ## What can you find in this GitHub?
 This Git contains the following:<br />
 
-1. .ipynb_checkpoints
+1. [.ipynb_checkpoints] (Nasenboi/AiudioDataScience_warnsystem-/-ipynb_checkpoints)
    - older versions of the main code
    - saved settings
 3. Archive
