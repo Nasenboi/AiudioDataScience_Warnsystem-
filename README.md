@@ -22,6 +22,7 @@ This Git contains the following:<br />
    - [ArtificialTraining](ArtificialTraining)
    - [AudioPreprocessing](AudioPreprocessing),
      - [AudioAugmentation](AudioAugmentation),
+       - to augment the self recorded samples
      - [AudioSetDownloader](AudioSetDownloader),
      - [CutAudioData](CutAudioData),
      - [DatasetSorting](DatasetSorting),
