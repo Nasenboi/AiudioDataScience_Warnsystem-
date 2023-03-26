@@ -12,7 +12,7 @@ Project goal: Being able to detect sounds that could be or lead to a serious thr
 ## What can you find in this GitHub?
 This Git contains the following:<br />
 
-1. [.ipynb_checkpoints](AiudioDataScience_warnsystem-/.ipynb_checkpoints)
+1. [.ipynb_checkpoints](.ipynb_checkpoints)
    - older versions of the main code
 2. [.vs](.vs)
    - saved settings
