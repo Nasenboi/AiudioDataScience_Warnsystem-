@@ -10,8 +10,8 @@ Reason behind the idea: Hearing-impaired or deaf people make around 5% of the wo
 Project goal: Being able to detect sounds that could be or lead to a serious threat.
 
 ## What can you find in this GitHub?
-This Git contains the following:
-
+This Git contains the following:<br />
+<br />
 1. .ipynb_checkpoints ------> the final main code as Jupyter Notebook format (.ipynb)
 2. .vs ---------------------> saved settings
 3. Archive -----------------> older versions of the main code and different code for testing
@@ -37,13 +37,13 @@ This Git contains the following:
 
 
 ## How would you launch the code yourself?
-Download the Git
-Get all the required libraries
+Download the Git<br />
+Get all the required libraries<br />
 Follow the instructions on the mainCodeV6.x.ipynb file
 
 ## About the Authors.
 
-Christian Böndgen & Nick Jonas Kuhoff 
+Christian Böndgen & Nick Jonas Kuhoff <br />
 @ University of Applied Sciences Düsseldorf
 
 ## Copyright
