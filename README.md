@@ -12,8 +12,7 @@ Project goal: Being able to detect sounds that could be or lead to a serious thr
 This Git contains the following:<br />
 
 1. .ipynb_checkpoints
-   - the final main code as Jupyter Notebook format (.ipynb)
-2. .vs
+   - older versions of the main code
    - saved settings
 3. Archive
    - older versions of the main code and different code for testing
@@ -38,7 +37,7 @@ This Git contains the following:<br />
 8. basicHeader.txt
 9. deleteUselessFiles.py
 10. mainCodeV6.x.ipynb
-    - the actual final main code (newest version)
+    - the final main code as Jupyter Notebook format (.ipynb)
 11. requirements.txt
     - to create an environment 
 
