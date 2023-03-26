@@ -1,4 +1,4 @@
-# Audio Data Science Project: Audible Threat Detection
+# Audio Data Science Project: Audible Threat Detection AI
 
 
 ## What is the Project about?
