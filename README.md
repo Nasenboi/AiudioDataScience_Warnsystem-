@@ -12,12 +12,13 @@ Project goal: Being able to detect sounds that could be or lead to a serious thr
 ## What can you find in this GitHub?
 This Git contains the following:<br />
 
-1. [.ipynb_checkpoints] (Nasenboi/AiudioDataScience_warnsystem-/-ipynb_checkpoints)
+1. [.ipynb_checkpoints](AiudioDataScience_warnsystem-/.ipynb_checkpoints)
    - older versions of the main code
+2. [.vs](.vs)
    - saved settings
-3. Archive
+3. [Archive](Archive)
    - older versions of the main code and different code for testing
-4. AudioDataPackag
+4. [AudioDataPackag](AudioDataPackag)
    - ArtificialTraining
      - AudioPreprocessing,
      - AudioAugmentation,
@@ -29,17 +30,17 @@ This Git contains the following:<br />
      - LabelProgram
    - AudioToInputData
    - allAudioDataToSpectrograms.py
-5. AudioTestData
+5. [AudioTestData](AudioTestData)
    - to test a single sample
-6. README
+6. [README.md](README.md)
    - in order to have a good overview of the GitHub 
-7. ToDos
+7. [ToDos.txt](ToDos.txt)
    - txt file for organizing the structure and upcoming tasks
-8. basicHeader.txt
-9. deleteUselessFiles.py
-10. mainCodeV6.x.ipynb
+8. [basicHeader.txt](basicHeader.txt)
+9. [deleteUselessFiles.py](deleteUselessFiles.py)
+10. [mainCodeV6.x.ipynb](mainCodeV6.x.ipynb)
     - the final main code as Jupyter Notebook format (.ipynb)
-11. requirements.txt
+11. [requirements.txt](requirements.txt)
     - to create an environment 
 
 
