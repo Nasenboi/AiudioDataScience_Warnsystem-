@@ -12,9 +12,9 @@ Project goal: Being able to detect sounds that could be or lead to a serious thr
 ## What can you find in this GitHub?
 This Git contains the following:<br />
 
-1. .ipynb_checkpoints ------> the final main code as Jupyter Notebook format (.ipynb)
-2. .vs ---------------------> saved settings
-3. Archive -----------------> older versions of the main code and different code for testing
+1. .ipynb_checkpoints --> the final main code as Jupyter Notebook format (.ipynb)
+2. .vs --> saved settings
+3. Archive --> older versions of the main code and different code for testing
 4. AudioDataPackag ---------> ArtificialTraining
                               AudioPreprocessing 
                                - AudioAugmentation, 
@@ -44,6 +44,6 @@ Follow the instructions on the mainCodeV6.x.ipynb file
 ## About the Authors.
 
 Christian Böndgen & Nick Jonas Kuhoff <br />
-@ University of Applied Sciences Düsseldorf
+Wi/Se 22/23 @ University of Applied Sciences Düsseldorf
 
 ## Copyright
