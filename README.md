@@ -24,7 +24,9 @@ This Git contains the following:<br />
      - [AudioAugmentation](AudioAugmentation),
        - to augment the self recorded samples
      - [AudioSetDownloader](AudioSetDownloader),
+       - to download the samples from google etc.
      - [CutAudioData](CutAudioData),
+       - this cuts the audio in 
      - [DatasetSorting](DatasetSorting),
      - [DataDescription](DataDescription.py),
      - [Downloader](Downloader.py),
