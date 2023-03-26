@@ -18,18 +18,18 @@ This Git contains the following:<br />
    - saved settings
 3. [Archive](Archive)
    - older versions of the main code and different code for testing
-4. [AudioDataPackag](AudioDataPackag)
-   - ArtificialTraining
-     - AudioPreprocessing,
-     - AudioAugmentation,
-     - AudioSetDownloader,
-     - CutAudioData,
-     - DatasetSorting,
-     - DataDescription,
-     - Downloader,
-     - LabelProgram
-   - AudioToInputData
-   - allAudioDataToSpectrograms.py
+4. [AudioDataPackage](AudioDataPackage)
+   - [ArtificialTraining](ArtificialTraining)
+   - [AudioPreprocessing](AudioPreprocessing),
+     - [AudioAugmentation](AudioAugmentation),
+     - [AudioSetDownloader](AudioSetDownloader),
+     - [CutAudioData](CutAudioData),
+     - [DatasetSorting](DatasetSorting),
+     - [DataDescription](DataDescription.py),
+     - [Downloader](Downloader.py),
+     - [LabelProgram](LabelProgram.py)
+   - [AudioToInputData](AudioToInputData)
+   - [allAudioDataToSpectrograms.py](allAudioDataToSpectrograms.py)
 5. [AudioTestData](AudioTestData)
    - to test a single sample
 6. [README.md](README.md)
