@@ -58,7 +58,7 @@ This Git contains the following:<br />
 ## How would you launch the code yourself?
 1. Download the Git<br />
 2. Get all the required libraries<br />
-3. 
+3. Chose the destination paths in the "allAudioDataToSpectrograms.py" code and run it
 4. Follow the instructions on the mainCodeV6.x.ipynb file
 
 ## About the Authors.
