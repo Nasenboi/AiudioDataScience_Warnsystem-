@@ -41,7 +41,7 @@ This Git contains the following:<br />
      - turns all the audio data into spectrograms - each single audio files get cut into smaller segments and these audio snippets get turned into a log spectrogram
 5. [AudioTestData](AudioTestData)
    - a single testsample
-6. [Praesentation_KIGefahrenerkennung_Boendgen_Kuhoff.pdf(Praesentation_KIGefahrenerkennung_Boendgen_Kuhoff.pdf)
+6. [Praesentation_KIGefahrenerkennung_Boendgen_Kuhoff.pdf](Praesentation_KIGefahrenerkennung_Boendgen_Kuhoff.pdf)
 7. [README.md](README.md)
    - in order to have a good overview of the Git
 8. [ToDos.txt](ToDos.txt)
