@@ -65,5 +65,3 @@ This Git contains the following:<br />
 
 Christian Böndgen & Nick Jonas Kuhoff <br />
 Wi/Se 22/23 @ University of Applied Sciences Düsseldorf
-
-## Copyright
