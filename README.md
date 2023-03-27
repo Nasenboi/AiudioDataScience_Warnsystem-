@@ -17,17 +17,18 @@ This Git contains the following:<br />
 2. [.vs](.vs)
    - saved settings
 3. [Archive](Archive)
-   - older versions of the main code and different code for testing
+   - code experiments and different code for testing
 4. [AudioDataPackage](AudioDataPackage)
    - [ArtificialTraining](ArtificialTraining)
    - [AudioPreprocessing](AudioPreprocessing),
      - [AudioAugmentation](AudioAugmentation),
-       - to augment the self recorded samples
+       - to augment the self recorded samples with the audiomentations library
      - [AudioSetDownloader](AudioSetDownloader),
-       - to download the samples from google etc.
+       - to download the samples from google etc. and organize it
      - [CutAudioData](CutAudioData),
-       - this cuts the audio in 
+       - this cuts the audio, so that the lengths are all the same
      - [DatasetSorting](DatasetSorting),
+       - this code sorts all the downloaded audiodata to the necessary labels, like the filename, samplerate, threat, salience and importance to name a few
      - [DataDescription](DataDescription.py),
      - [Downloader](Downloader.py),
      - [LabelProgram](LabelProgram.py)
