@@ -3,7 +3,7 @@
 # platform: win-64
 _tflow_select=2.1.0=gpu
 abseil-cpp=20210324.2=hd77b12b_0
-absl-py=1.4.0=pyhd8ed1ab_0
+absl-py=0.15.0=pypi_0
 aiohttp=3.8.1=py39hb82d6ee_1
 aiosignal=1.3.1=pyhd8ed1ab_0
 appdirs=1.4.4=pyh9f0ad1d_0
@@ -20,15 +20,17 @@ bottleneck=1.3.5=py39h080aedc_0
 brotli=1.0.9=h8ffe710_7
 brotli-bin=1.0.9=h8ffe710_7
 brotlipy=0.7.0=py39hb82d6ee_1004
-ca-certificates=2022.12.7=h5b45459_0
+ca-certificates=2023.01.10=haa95532_0
 cached-property=1.5.2=hd8ed1ab_1
 cached_property=1.5.2=pyha770c72_1
-cachetools=5.2.1=pyhd8ed1ab_0
-certifi=2022.12.7=pyhd8ed1ab_0
+cachetools=4.2.4=pypi_0
+certifi=2022.12.7=py39haa95532_0
 cffi=1.15.1=py39h0878f49_0
 charset-normalizer=2.1.1=pyhd8ed1ab_0
+clang=5.0=pypi_0
 click=8.1.3=win_pyhd8ed1ab_2
 colorama=0.4.6=py39haa95532_0
+comm=0.1.2=py39haa95532_0
 cryptography=37.0.4=py39h7bc7c5c_0
 cudatoolkit=11.3.1=h59b6b97_2
 cudnn=8.2.1=cuda11.3_0
@@ -39,13 +41,13 @@ entrypoints=0.4=py39haa95532_0
 executing=0.8.3=pyhd3eb1b0_0
 ffmpeg=4.2.2=he774522_0
 fftw=3.3.10=nompi_h52fa85e_103
-flatbuffers=2.0.0=h6c2663c_0
+flatbuffers=1.12=pypi_0
 fonttools=4.25.0=pyhd3eb1b0_0
 freetype=2.10.4=h546665d_1
 frozenlist=1.3.3=py39h2bbff1b_0
 gast=0.4.0=pyh9f0ad1d_0
 giflib=5.2.1=h8d14728_2
-google-auth=2.16.0=pyh1a96a4e_1
+google-auth=1.35.0=pypi_0
 google-auth-oauthlib=0.4.1=py_2
 google-pasta=0.2.0=pyh8c360ce_0
 grpcio=1.42.0=py39hc60d5dd_0
@@ -56,13 +58,14 @@ icu=68.1=h6c2663c_0
 idna=3.4=pyhd8ed1ab_0
 importlib-metadata=6.0.0=pyha770c72_0
 intel-openmp=2021.4.0=haa95532_3556
-ipykernel=6.9.1=py39haa95532_0
+ipykernel=6.19.2=py39hd4e2768_0
 ipython=8.7.0=py39haa95532_0
 jedi=0.18.1=py39haa95532_1
 joblib=1.2.0=pyhd8ed1ab_0
 jpeg=9e=h8ffe710_2
 jupyter_client=7.2.2=py39haa95532_0
 jupyter_core=4.10.0=py39haa95532_0
+kapre=0.3.7=pypi_0
 keras=2.6.0=pyhd3eb1b0_0
 keras-preprocessing=1.1.2=pyhd8ed1ab_0
 kiwisolver=1.4.4=py39h2e07f2f_0
@@ -90,6 +93,7 @@ mkl=2021.4.0=haa95532_640
 mkl-service=2.4.0=py39h2bbff1b_0
 mkl_fft=1.3.1=py39h277e83a_0
 mkl_random=1.2.2=py39hf11a4ad_0
+mlxtend=0.21.0=pypi_0
 multidict=6.0.2=py39h2bbff1b_0
 munkres=1.1.4=pyh9f0ad1d_0
 nest-asyncio=1.5.5=py39haa95532_0
@@ -98,7 +102,7 @@ numexpr=2.8.4=py39h5b0cc5e_0
 numpy=1.23.5=py39h3b20f71_0
 numpy-base=1.23.5=py39h4da318b_0
 oauthlib=3.2.2=pyhd8ed1ab_0
-openssl=1.1.1s=h2bbff1b_0
+openssl=1.1.1t=h2bbff1b_0
 opt_einsum=3.3.0=pyhd8ed1ab_1
 packaging=22.0=py39haa95532_0
 pandas=1.5.1=py39hf11a4ad_0
@@ -110,6 +114,7 @@ playsound=1.3.0=pypi_0
 pooch=1.6.0=pyhd8ed1ab_0
 prompt-toolkit=3.0.36=py39haa95532_0
 protobuf=3.17.2=py39hd77b12b_0
+psutil=5.9.0=py39h2bbff1b_0
 pure_eval=0.2.2=pyhd3eb1b0_0
 pyasn1=0.4.8=py_0
 pyasn1-modules=0.2.7=py_0
@@ -122,7 +127,6 @@ pysocks=1.7.1=pyh0701188_6
 pysoundfile=0.11.0=pyhd8ed1ab_0
 python=3.9.13=h6244533_2
 python-dateutil=2.8.2=pyhd3eb1b0_0
-python-flatbuffers=1.12=pyhd3eb1b0_0
 python_abi=3.9=2_cp39
 pytz=2022.7=py39haa95532_0
 pyu2f=0.1.5=pyhd8ed1ab_0
@@ -136,6 +140,7 @@ scikit-learn=1.1.3=py39hd77b12b_0
 scipy=1.9.3=py39he11b74f_0
 setuptools=65.5.0=py39haa95532_0
 six=1.16.0=pyhd3eb1b0_1
+sklearn=0.0.post1=pypi_0
 snappy=1.1.9=h82413e6_1
 sounddevice=0.4.5=pypi_0
 sqlite=3.40.0=h2bbff1b_0

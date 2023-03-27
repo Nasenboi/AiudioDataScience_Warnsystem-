@@ -3,7 +3,7 @@ This package contains all the code, that can be used in the main code.
 It contains functions and classes, that do small tasks and manage library/data operations.
 The package has five subfolders for each big processes for the project:
 - AudioSetDownloader:		These codes are used to geather the audiodata from different AudioDatasets
-- AudioArgumentation:		a
-- AudioToInputData:			a
-- AudioPreprocessing:		a
-- NeuralNetworkTraining:	a
+- AudioArgumentation:		This code is used to create more trainingdata from existing audiofiles
+- AudioToInputData:		These codes convert the audio informations to useable trainingdata
+- AudioPreprocessing:		Here are all the preprocessing codes we needed, including the folders above
+- ArtificialTraining:           This was just for tesing purposes
