@@ -29,11 +29,11 @@ This Git contains the following:<br />
        - this cuts the audio, so that the lengths are all the same
      - [DatasetSorting](AudioDataPackage/AudioPreprocessing/DatasetSorting)
        - this code sorts all the downloaded audiodata to the necessary labels, like the filename, samplerate, threat, salience and importance to name a few
-     - [DataDescription](AudioDataPackage/AudioPreprocessing/DataDescription.py)
+     - [DataDescription.py](AudioDataPackage/AudioPreprocessing/DataDescription.py)
        - this code gives a basic data description of the current audioset
-     - [Downloader](AudioDataPackage/AudioPreprocessing/Downloader.py)
+     - [Downloader.py](AudioDataPackage/AudioPreprocessing/Downloader.py)
        - this is for downloading audio files from specific categories from Youtube
-     - [LabelProgram](AudioDataPackage/AudioPreprocessing/LabelProgram.py)
+     - [LabelProgram.py](AudioDataPackage/AudioPreprocessing/LabelProgram.py)
        - with this program it is possible to update the csv for the audioset to verify each audiofile for its target values, it is also possible to delete single samples (if they are not useful
    - [AudioToInputData](AudioDataPackage/AudioToInputData)
      - prepares the audio data for the input of the network
