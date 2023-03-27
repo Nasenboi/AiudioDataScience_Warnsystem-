@@ -24,16 +24,21 @@ This Git contains the following:<br />
      - [AudioAugmentation](AudioAugmentation),
        - to augment the self recorded samples with the audiomentations library
      - [AudioSetDownloader](AudioSetDownloader),
-       - to download the samples from google etc. and organize it
+       - to download the samples from AudioSet etc. and organize it
      - [CutAudioData](CutAudioData),
        - this cuts the audio, so that the lengths are all the same
      - [DatasetSorting](DatasetSorting),
        - this code sorts all the downloaded audiodata to the necessary labels, like the filename, samplerate, threat, salience and importance to name a few
      - [DataDescription](DataDescription.py),
+       - this code gives a basic data description of the current audioset
      - [Downloader](Downloader.py),
+       - this is for downloading audio files from specific categories from Youtube
      - [LabelProgram](LabelProgram.py)
+       - with this program it is possible to update the csv for the audioset to verify each audiofile for its target values, it is also possible to delete single samples (if they are not useful
    - [AudioToInputData](AudioToInputData)
+     - prepares the audio data for the input of the network
    - [allAudioDataToSpectrograms.py](allAudioDataToSpectrograms.py)
+     - turns all the audio data into spectrograms - each single audio files get cut into smaller segments and these audio snippets get turned into a log spectrogram
 5. [AudioTestData](AudioTestData)
    - to test a single sample
 6. [README.md](README.md)
