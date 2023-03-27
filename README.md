@@ -61,7 +61,7 @@ This Git contains the following:<br />
 1. Download the Git<br />
 2. Get all the required libraries using the requirements.txt<br />
 3. Chose the destination paths in the "allAudioDataToSpectrograms.py" code and run it
-4. Follow the instructions on the mainCodeV6.x.ipynb file
+4. Follow the instructions on the "mainCodeV6.x.ipynb" file
 
 ## About the Authors.
 
