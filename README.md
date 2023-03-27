@@ -40,17 +40,18 @@ This Git contains the following:<br />
    - [allAudioDataToSpectrograms.py](allAudioDataToSpectrograms.py)
      - turns all the audio data into spectrograms - each single audio files get cut into smaller segments and these audio snippets get turned into a log spectrogram
 5. [AudioTestData](AudioTestData)
-   - to test a single sample
+   - a single testsample
 6. [README.md](README.md)
-   - in order to have a good overview of the GitHub 
+   - in order to have a good overview of the Git
 7. [ToDos.txt](ToDos.txt)
-   - txt file for organizing the structure and upcoming tasks
+   - document for organizing the structure and upcoming tasks (did not start from beginning of the project)
 8. [basicHeader.txt](basicHeader.txt)
 9. [deleteUselessFiles.py](deleteUselessFiles.py)
+   - this code deletes all the unnecessary audiofiles from the csv
 10. [mainCodeV6.x.ipynb](mainCodeV6.x.ipynb)
     - the final main code as Jupyter Notebook format (.ipynb)
 11. [requirements.txt](requirements.txt)
-    - to create an environment 
+    - to create the environment 
 
 
 
