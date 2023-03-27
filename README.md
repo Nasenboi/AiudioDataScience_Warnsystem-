@@ -19,23 +19,23 @@ This Git contains the following:<br />
 3. [Archive](Archive)
    - code experiments and different code for testing
 4. [AudioDataPackage](AudioDataPackage)
-   - [ArtificialTraining](ArtificialTraining)
-   - [AudioPreprocessing](AudioPreprocessing)
-     - [AudioAugmentation](AudioAugmentation)
+   - [ArtificialTraining](AudioDataPackage/ArtificialTraining)
+   - [AudioPreprocessing](AudioDataPackage/AudioPreprocessing)
+     - [AudioAugmentation](AudioDataPackage/AudioPreprocessing/AudioAugmentation)
        - to augment the self recorded samples with the audiomentations library
-     - [AudioSetDownloader](AudioSetDownloader)
+     - [AudioSetDownloader](AudioDataPackage/AudioPreprocessing/AudioSetDownloader)
        - to download the samples from AudioSet etc. and organize it
-     - [CutAudioData](CutAudioData)
+     - [CutAudioData](AudioDataPackage/AudioPreprocessing/CutAudioData)
        - this cuts the audio, so that the lengths are all the same
-     - [DatasetSorting](DatasetSorting)
+     - [DatasetSorting](AudioDataPackage/AudioPreprocessing/DatasetSorting)
        - this code sorts all the downloaded audiodata to the necessary labels, like the filename, samplerate, threat, salience and importance to name a few
-     - [DataDescription](DataDescription.py)
+     - [DataDescription](AudioDataPackage/AudioPreprocessing/DataDescription.py)
        - this code gives a basic data description of the current audioset
-     - [Downloader](Downloader.py)
+     - [Downloader](AudioDataPackage/AudioPreprocessing/Downloader.py)
        - this is for downloading audio files from specific categories from Youtube
-     - [LabelProgram](LabelProgram.py)
+     - [LabelProgram](AudioDataPackage/AudioPreprocessing/LabelProgram.py)
        - with this program it is possible to update the csv for the audioset to verify each audiofile for its target values, it is also possible to delete single samples (if they are not useful
-   - [AudioToInputData](AudioToInputData)
+   - [AudioToInputData](AudioDataPackage/AudioToInputData)
      - prepares the audio data for the input of the network
    - [allAudioDataToSpectrograms.py](AudioDataPackage/allAudioDataToSpectrograms.py)
      - turns all the audio data into spectrograms - each single audio files get cut into smaller segments and these audio snippets get turned into a log spectrogram
