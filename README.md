@@ -48,6 +48,8 @@ This Git contains the following:<br />
 8. [basicHeader.txt](basicHeader.txt)
 9. [deleteUselessFiles.py](deleteUselessFiles.py)
    - this code deletes all the unnecessary audiofiles from the csv
+10. [labeled_audio_data.csv](labeled_audio_data.csv)
+11. [labeled_audio_data_old.csv](labeled_audio_data_old.csv)
 10. [mainCodeV6.x.ipynb](mainCodeV6.x.ipynb)
     - the final main code as Jupyter Notebook format (.ipynb)
 11. [requirements.txt](requirements.txt)
