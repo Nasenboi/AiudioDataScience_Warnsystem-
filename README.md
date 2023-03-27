@@ -41,18 +41,19 @@ This Git contains the following:<br />
      - turns all the audio data into spectrograms - each single audio files get cut into smaller segments and these audio snippets get turned into a log spectrogram
 5. [AudioTestData](AudioTestData)
    - a single testsample
-6. [README.md](README.md)
+6. [Praesentation_KIGefahrenerkennung_Boendgen_Kuhoff.pdf(Praesentation_KIGefahrenerkennung_Boendgen_Kuhoff.pdf)
+7. [README.md](README.md)
    - in order to have a good overview of the Git
-7. [ToDos.txt](ToDos.txt)
+8. [ToDos.txt](ToDos.txt)
    - document for organizing the structure and upcoming tasks (did not start from beginning of the project)
-8. [basicHeader.txt](basicHeader.txt)
-9. [deleteUselessFiles.py](deleteUselessFiles.py)
+9. [basicHeader.txt](basicHeader.txt)
+10. [deleteUselessFiles.py](deleteUselessFiles.py)
    - this code deletes all the unnecessary audiofiles from the csv
-10. [labeled_audio_data.csv](labeled_audio_data.csv)
-11. [labeled_audio_data_old.csv](labeled_audio_data_old.csv)
-10. [mainCodeV6.x.ipynb](mainCodeV6.x.ipynb)
+11. [labeled_audio_data.csv](labeled_audio_data.csv)
+12. [labeled_audio_data_old.csv](labeled_audio_data_old.csv)
+13. [mainCodeV6.x.ipynb](mainCodeV6.x.ipynb)
     - the final main code as Jupyter Notebook format (.ipynb)
-11. [requirements.txt](requirements.txt)
+14. [requirements.txt](requirements.txt)
     - to create the environment 
 
 
