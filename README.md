@@ -20,18 +20,18 @@ This Git contains the following:<br />
    - code experiments and different code for testing
 4. [AudioDataPackage](AudioDataPackage)
    - [ArtificialTraining](ArtificialTraining)
-   - [AudioPreprocessing](AudioPreprocessing),
-     - [AudioAugmentation](AudioAugmentation),
+   - [AudioPreprocessing](AudioPreprocessing)
+     - [AudioAugmentation](AudioAugmentation)
        - to augment the self recorded samples with the audiomentations library
-     - [AudioSetDownloader](AudioSetDownloader),
+     - [AudioSetDownloader](AudioSetDownloader)
        - to download the samples from AudioSet etc. and organize it
-     - [CutAudioData](CutAudioData),
+     - [CutAudioData](CutAudioData)
        - this cuts the audio, so that the lengths are all the same
-     - [DatasetSorting](DatasetSorting),
+     - [DatasetSorting](DatasetSorting)
        - this code sorts all the downloaded audiodata to the necessary labels, like the filename, samplerate, threat, salience and importance to name a few
-     - [DataDescription](DataDescription.py),
+     - [DataDescription](DataDescription.py)
        - this code gives a basic data description of the current audioset
-     - [Downloader](Downloader.py),
+     - [Downloader](Downloader.py)
        - this is for downloading audio files from specific categories from Youtube
      - [LabelProgram](LabelProgram.py)
        - with this program it is possible to update the csv for the audioset to verify each audiofile for its target values, it is also possible to delete single samples (if they are not useful
