@@ -5,7 +5,7 @@
 ## What is the Project about?
 Building an AI for sonic recognition of dangers/treats and signal tones in daily sounds (e.g. fire alarm, vehicle sirence or car horns).<br />
 <br />
-Reason behind the idea: Hearing-impaired or deaf people make around 5% of the worlds population. Whereas, for using an AI in this field, the research and application possibilities are significantly little. Using this CNN as the base for an application, affected people could be instantly warned of dangers through vibrations of a smartphone.<br />
+Reason and thoughts behind the idea: Hearing-impaired or deaf people make around 5% of the worlds population. Whereas, for using an AI in this field, the research and application possibilities are significantly little. Using this CNN as the base for an application, affected people could be instantly warned of dangers through vibrations of a smartphone.<br />
 <br />
 Project goal: Being able to detect sounds that could be or lead to a serious threat.
 
