@@ -37,7 +37,7 @@ This Git contains the following:<br />
        - with this program it is possible to update the csv for the audioset to verify each audiofile for its target values, it is also possible to delete single samples (if they are not useful
    - [AudioToInputData](AudioToInputData)
      - prepares the audio data for the input of the network
-   - [allAudioDataToSpectrograms.py](allAudioDataToSpectrograms.py)
+   - [allAudioDataToSpectrograms.py](AudioDataPackage/allAudioDataToSpectrograms.py)
      - turns all the audio data into spectrograms - each single audio files get cut into smaller segments and these audio snippets get turned into a log spectrogram
 5. [AudioTestData](AudioTestData)
    - a single testsample
@@ -56,9 +56,10 @@ This Git contains the following:<br />
 
 
 ## How would you launch the code yourself?
-Download the Git<br />
-Get all the required libraries<br />
-Follow the instructions on the mainCodeV6.x.ipynb file
+1. Download the Git<br />
+2. Get all the required libraries<br />
+3. 
+4. Follow the instructions on the mainCodeV6.x.ipynb file
 
 ## About the Authors.
 
